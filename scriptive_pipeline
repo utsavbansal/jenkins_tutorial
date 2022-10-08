@@ -1,0 +1,19 @@
+node{
+    for(int i=0;i<2;i++)
+    {
+        stage "Stage #"+i
+        print "This is Stage # "+i+" running....."
+        if(i==0)
+        {
+            git "https://github.com/Zulaikha12/gitnew.git"
+            echo "Running on stage no # "+i
+        }
+        else
+        {
+            build "DeclarativePipeline"
+            echo "Running on stage no # "+i   
+        }
+    }
+    
+    
+}
